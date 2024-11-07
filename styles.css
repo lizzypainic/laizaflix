@@ -11,7 +11,7 @@ header {
     font-size: 32px;
     color: rgb(0, 0, 0);
     text-align: center;
-    text-decoration-line: line-through;
+    text-decoration: none;
 }
 
 section {
