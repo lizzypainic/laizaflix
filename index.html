@@ -1,64 +1,194 @@
-<html>
-    <head>
-        <title>Produção e Sustentabilidade</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026 - Produção e Sustentabilidade</title>
 
-        <style>
-            /* AQUI COMEÇA O CSS PARA DAR COR E TAMANHO */
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
 
-            /* ESTILO PARA O BLOCO VERDE QUE SEGURA TUDO */
-            .bloco1{
-                background-color: #2ecc71; /* DEFINE A COR DE FUNDO COMO VERDE */
-                padding: 20px; /* COLOCA UM ESPAÇO DE 20 PIXELS DENTRO */
-                font-family: sans-serif; /* USA UMA FONTE SEM AQUELAS SERIFAS */
-                text-align: center; /* ALINHA TODO O TEXTO NO MEIO */
-                color: white; /* COLOCA A COR DA LETRA COMO BRANCO */
-            } /* FECHA O ESTILO DO BLOCO 1 */
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
 
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
 
-            /* ESTILO PARA A CAIXA QUE FICA NO CENTRO */
-            .caixa-meio {
-                border: 2px solid #ccc; /* COLOCA UMA BORDA CINZA DE 2 PIXELS */
-                margin: 20px; /* EMPURRA AS COISAS DE FORA 20 PIXELS */
-                padding: 15px; /* EMPURRA O TEXTO DE DENTRO 15 PIXELS */
-                color: black; /* MUDA A LETRA PARA PRETO PARA LER MELHOR */
-            } /* FECHA O ESTILO DA CAIXA MEIO */
+header h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    text-shadow:0 0 15px #00ff99;
+}
 
-            /* ESTILO DO BOTÃO AMARELO */
-            #btn1 {
-                background: #f1c40f; /* COLOCA O FUNDO DO BOTÃO EM AMARELO */
-                border: none; /* TIRA AQUELA BORDA FEIA DO BOTÃO */
-                padding: 10px; /* DEFINE O TAMANHO INTERNO DO BOTÃO */
-                font-weight: bold; /* DEIXA O TEXTO EM NEGRITO */
-                cursor: pointer; /* MOSTRA A MÃOZINHA QUANDO PASSA O MOUSE */
-            } /* FECHA O ESTILO DO BOTÃO */
+header p{
+    font-size:1.3rem;
+    max-width:700px;
+}
 
-            /* ESTILO DO TEXTO DO RODAPÉ */
-            .texto1 {
-                font-size: 12px; /* DEIXA A LETRA BEM PEQUENININHA */
-                margin-top: 50px; /* EMPURRA O RODAPÉ PARA BAIXO */
-                border-top: 1px solid #000; /* CRIA UMA LINHA PRETA EM CIMA */
-            } /* FECHA O ESTILO DO TEXTO 1 */
+.btn{
+    margin-top:30px;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#00ff99;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s;
+}
 
-            /* FIM DA TAG DE ESTILO CSS */
-        </style>
-    </head>
-    <body>
-        Site do Projeto
-        <div class="bloco1">
+.btn:hover{
+    transform:scale(1.1);
+}
 
-            <div style="font-size: 25px;">Meu Projeto de Tecnologia</div>
-            <div class="caixa-meio">
-                <p>O milho vira bioplástico e depois vira música!</p>
+section{
+    padding:80px 10%;
+}
 
-                <div id="btn1" onclick="alert('Incrível, né?')">CLIQUE AQUI</div>
-            </div>
+.titulo{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:#00ff99;
+}
 
-            <div class="texto1">Criado por mim</div>
+.cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:300px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:25px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(0,255,153,0.5);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00ff99;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.3);
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Produção e Sustentabilidade</h1>
+    <p>
+        Construindo um futuro onde o desenvolvimento econômico
+        e a preservação ambiental caminham juntos.
+    </p>
+
+    <button class="btn" onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'})">
+        Explorar
+    </button>
+</header>
+
+<section id="sobre">
+    <h2 class="titulo">Sobre o Tema</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Produção</h3>
+            <p>
+                A produção agrícola é essencial para alimentar a população
+                e movimentar a economia.
+            </p>
         </div>
 
-        <script>
-            // MANDA UMA MENSAGEM PARA O CONSOLE DO DESENVOLVEDOR
-            console.log("O site abriu."); // REGISTRA O LOG DE ABERTURA
-        </script>
-    </body>
+        <div class="card">
+            <h3>Sustentabilidade</h3>
+            <p>
+                Consiste em utilizar os recursos naturais de forma consciente,
+                preservando-os para as futuras gerações.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Equilíbrio</h3>
+            <p>
+                O desafio atual é produzir mais sem comprometer o meio ambiente.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Desafios</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Desmatamento</h3>
+            <p>A expansão desordenada de áreas produtivas ameaça ecossistemas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Poluição</h3>
+            <p>O descarte inadequado de resíduos afeta rios, solos e a biodiversidade.</p>
+        </div>
+
+        <div class="card">
+            <h3>Uso Excessivo</h3>
+            <p>O consumo exagerado de recursos naturais reduz a disponibilidade futura.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Soluções Sustentáveis</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Energia Limpa</h3>
+            <p>Investimento em fontes renováveis para reduzir impactos ambientais.</p>
+        </div>
+
+        <div class="card">
+            <h3>Tecnologia</h3>
+            <p>A inovação permite maior produtividade com menor desperdício.</p>
+        </div>
+
+        <div class="card">
+            <h3>Conscientização</h3>
+            <p>A educação ambiental fortalece atitudes responsáveis.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Projeto Agrinho 2026 • Produção e Sustentabilidade</p>
+</footer>
+
+</body>
 </html>
