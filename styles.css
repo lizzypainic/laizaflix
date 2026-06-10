@@ -1,3 +1,103 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7f6;
+}
+
+/* HERO (cabeçalho grande bonito) */
+.hero {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1b5e20;
+}
+
+/* SEÇÃO */
+#conteudo {
+  padding: 50px;
+  text-align: center;
+}
+
+#conteudo h2 {
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+/* CARDS */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2e7d32;
+  color: white;
+  margin-top: 40px;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
