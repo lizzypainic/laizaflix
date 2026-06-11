@@ -1,8 +1,29 @@
-body {
-  background-image: url("fundo.jpg");
-  background-size: cover;
+/* centraliza tudo na página */
+.container {
+    text-align: center;
+    padding: 40px;
 }
 
-.overlay {
-  background: rgba(0,0,0,0.4);
+/* deixa os cards lado a lado */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* estilo dos cards */
+.card {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* porcentagem grande e destacada */
+.porcentagem {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2e7d32;
 }
